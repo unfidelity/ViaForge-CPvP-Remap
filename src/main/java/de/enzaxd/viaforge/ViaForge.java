@@ -63,6 +63,10 @@ public class ViaForge {
         new BackwardsLoader(file);
 
         initFuture.complete(null);
+
+        if(getVersion() != 340){
+            setVersion(340);
+        }
     }
 
     public Logger getjLogger() {
